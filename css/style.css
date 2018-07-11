@@ -757,10 +757,11 @@ ul.address li ul.agileits-address-text li a {
 
 /*--gallery--*/
 .gallery-grids {
-	padding: 30px;
+	padding: 0px;
 	width: 33.33%;
 	padding-bottom: 2em;
-	padding-top: 2em;
+	padding-top:    0em;
+        padding-left:   5em;
 }
 .gallery-box {
     display: block;
