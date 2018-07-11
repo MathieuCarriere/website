@@ -1,0 +1,21 @@
+\chapter{Conclusion}
+
+In this thesis, we presented several metric and statistical properties of topological descriptors.
+We showed that Reeb graphs can be compared efficiently with a pseudometric that is locally a true distance (Chapter~\ref{chap:backgroundTelescopesReeb}), 
+then, using this pseudometric, we proposed a way to metrize the space of Mappers in a stable way (Chapter~\ref{chap:MapperStability}),
+and we showed that the Mapper is an optimal estimator, for which we can compute confidence regions and automatic parameters (Chapter~\ref{chap:MapperStatistic}).
+Finally, we presented two methods to use the Mapper signatures, the persistence diagrams, in supervised Machine Learning  (Chapter~\ref{chap:LearningPDs}).
+In each chapter, we ended with some open questions raised by the chapter results.   
+
+\paragraph*{} More generally, the next long-term step for this work is to fit to current trends, both in Topological Data Analysis and in Machine Learning.
+Concerning topology, a lot of efforts is now devoted in the community to the extension of persistence theory
+to multivariate modules, i.e. vector spaces indexed by Euclidean vectors instead of the real line~\cite{Cagliari11,Carlsson09c,Cochoy16,Harrington17}.
+In some cases, decomposition results exist, but stability is still unclear in general. Similarly, Reeb graphs and Mappers can 
+be defined for multivariate functions, but our analysis in Chapters~\ref{chap:backgroundTelescopesReeb},~\ref{chap:MapperStability} 
+and~\ref{chap:MapperStatistic} is anchored to functions that are real-valued.
+
+Concerning supervised Machine Learning, the current hot topic is deep learning~\cite{Goodfellow16}, whose gradient descent based algorithms 
+optimize predictor functions depending on the architecture of a network of parameters. This field of Machine Learning achieved
+astounding results, i.e. in image classification and speech recognition, even though its theory is not well understood.
+Some works already did a first step towards the integration of topological descriptors into this field~\cite{Cang17,Hofer17,Liu16}, but
+a comprehensive study on how this integration should be done is still lacking.

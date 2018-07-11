@@ -1,0 +1,192 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+	\usepackage[OT1]{fontenc}
+	\moderncvtheme[blue]{classic}
+	\usepackage[top=1.1cm, bottom=1.1cm, left=0.5cm, right=1cm]{geometry}
+	\usepackage{eurosym}
+	\setlength{\hintscolumnwidth}{2.5cm}
+	\firstname{Mathieu}
+	\familyname{Carri\`ere}
+	\title{Topological Data Analysis and Machine Learning}
+	\email{mathieu.carriere3@gmail.com}
+	\mobile{+33(0) 6 82 61 13 23}
+	\extrainfo{Adress: 45 ter rue Michel Montagn\'e, \\ 31170 Tournefeuille, France \\ https://mathieucarriere.bitbucket.io/ \\ Skype: mathieu.carriere \\ French and American citizenship}
+	
+	\newlength\listtripleitemmaincolumnwidth
+
+\makeatletter
+\renewcommand*{\recomputecvlengths}{%
+  \setlength{\quotewidth}{0.65\textwidth}%
+  \setlength{\maincolumnwidth}{\textwidth-\separatorcolumnwidth-\hintscolumnwidth}%
+  \setlength{\listitemmaincolumnwidth}{\maincolumnwidth-\listitemsymbolwidth}%
+  \setlength{\doubleitemmaincolumnwidth}{\maincolumnwidth-\hintscolumnwidth-\separatorcolumnwidth-\separatorcolumnwidth}%
+  \setlength{\doubleitemmaincolumnwidth}{0.5\doubleitemmaincolumnwidth}%
+  \setlength{\listdoubleitemmaincolumnwidth}{\maincolumnwidth-\listitemsymbolwidth-\separatorcolumnwidth-\listitemsymbolwidth}%
+  \setlength{\listdoubleitemmaincolumnwidth}{0.5\listdoubleitemmaincolumnwidth}%
+  \setlength\listtripleitemmaincolumnwidth{.66\listdoubleitemmaincolumnwidth}%
+  \renewcommand{\headwidth}{\textwidth}%
+  \setlength{\parskip}{0\p@}%
+}
+\makeatother
+
+\newcommand{\cvdoublecolumn}[2]{%
+  \cvline{}{%
+  \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#1\end{minipage}%
+  \hfill%
+  \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#2\end{minipage}%
+ }%
+}
+
+\newcommand{\cvtriplecolumn}[3]{%
+  \cvline{}{%
+  \begin{minipage}[t]{\listtripleitemmaincolumnwidth}#1\end{minipage}%
+  \hfill%
+  \begin{minipage}[t]{\listtripleitemmaincolumnwidth}#2\end{minipage}%
+  \hfill%
+  \begin{minipage}[t]{\listtripleitemmaincolumnwidth}#3\end{minipage}%
+ }%
+}
+
+\newcommand{\cvreference}[7]{%
+  \textbf{#1}\newline% Name
+  \ifthenelse{\equal{#2}{}}{}{#2\newline}%
+  \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+  \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+  \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+  \ifthenelse{\equal{#6}{}}{}{\texttt{#6}\newline}%
+  \ifthenelse{\equal{#7}{}}{}{#7}}
+
+\begin{document}
+
+	\maketitle
+
+	\section{Education}
+		
+		\cventry{Now}{Postdoctoral fellow}{Rabadan Lab, Columbia University, New York, USA}{}{}{}
+
+		\cventry{2017}{Ph.D. in Applied Mathematics and Informatics}{DataShape, Inria Saclay, Palaiseau, France}{}{}
+                {\textbf{Title:} On metric and statistical properties of topological descriptors for geometric data.} %\textbf{Advisor:} Steve Oudot.}		
+		
+ 		\cventry{2014}{M.Sc. in Mathematics, Vision and Learning}{ENS Cachan, Cachan, France}{}{}{} 
+                %\textbf{Relevant modules:} Probabilistic Graphical Models, Geometry and Shape Space, Computer Vision and Learning 
+                %(SVM, Boosting, Random Forests, Neural Networks).}
+
+		\cventry{2014}{Engineering Degree}{Ecole Centrale Paris, Châtenay-Malabry, France}{}{}{}
+                %{\textbf{Relevant modules:} Geometric and Topological Modeling, C++ Programming, Statistics and Data Mining, Convex Optimization.}
+		
+
+	\section{Research contributions and impact}
+
+		\cventry{}{\normalfont My research focuses on topological data analysis (TDA) and statistical machine learning (ML).
+		I contributed to the analysis of topological descriptors and on the use of 
+                ML kernel methods for them with appropriate kernels, signatures and metrics. 
+                %I also contributed to the study of rates of convergence and confidence intervals for these representations. 
+		This work resulted in several scientific articles in top conference proceedings
+		and scientific journals, and has been used in different fields, like bioinformatics and computer graphics.
+		I also implemented part of this work in the C++ GUDHI library}{}{}{}{} %I am also interested in applying deep learning to TDA.
+
+	\section{Research Articles}
+
+	\subsection{Machine Learning}
+
+		%\cventry{}{\normalfont Local Signatures using Persistence Diagrams. M. Carrière, S. Oudot, M. Ovsjanikov}{\textit{HAL}, 2015}{}{}{}
+		\cventry{-}{\normalfont Stable Topological Signatures for Points on 3D Shapes. M. Carrière, S. Oudot, M. Ovsjanikov}
+			  {\textit{Proceedings of the 13th Symposium on Geometry Processing}, 2015}
+                          {}{}{\small Used topological descriptors to improve accuracy in 3D point classification on the dataset of Chen et al.}
+
+		%\cventry{}{\normalfont Structure and Stability of the 1-Dimensional Mapper. M. Carrière, S. Oudot}{\textit{Proceedings of the 32nd Symposium on Computational Geometry}, 2016}{}{}{}
+		\cventry{-}{\normalfont Sliced Wasserstein Kernel for Persistence Diagrams. M. Carrière, M. Cuturi, S. Oudot}
+                          {\textit{Proceedings of the 34th International Conference on Machine Learning}, 2017}
+			  {}{}{\small Derived a new kernel for Persistence Diagrams improving accuracy on various datasets, such as texture images. }
+
+		\cventry{-}{\normalfont Statistical Analysis and Parameter Selection for Mapper. M. Carrière, B. Michel, S. Oudot}
+                          {\textit{Accepted for publication in Journal of Machine Learning Research under minor revisions}, 2017}
+                          {}{}{\small Defined confidence intervals and convergence rates for the Mapper clustering algorithm.}
+
+		\cventry{-}{\normalfont Two-Tiers Mapper: a user-friendly clustering method for global gene expression based on topology. R. Jeitziner, 
+                           M. Carrière, J. Rougemont, S. Oudot, K. Hess, C. Brisken}
+                          {\textit{Submitted}}
+                          {}{}{\small Used the Mapper clustering algorithm for genomics.}
+	
+
+	\subsection{Metrics}	
+	%\section{Submitted articles}
+		\cventry{-}{\normalfont Local Equivalence and Intrinsic Metrics between Reeb graphs. M. Carrière, S. Oudot}
+                          { \textit{Proceedings of the 33rd Symposium on Computational Geometry}, 2017}
+                          {}{}{\small Established a local equivalence between the bottleneck and the Gromov Hausdorff distances for Reeb graphs.}
+
+		\cventry{-}{\normalfont Structure and Stability of the 1-Dimensional Mapper. M. Carrière, S. Oudot}
+                          {\textit{Journal on Foundations of Computational Mathematics}, 2017}
+                          {}{}{\small Defined appropriate metrics to prove the stability of the Mapper clustering algorithm.}
+
+                \cventry{-}{\normalfont On the Metric Distortion of Embedding Persistence Diagrams into Reproducing Kernel Hilbert Spaces. M. Carrière, U. Bauer}
+                          {\textit{Submitted}}
+                          {}{}{\small Established negative results about the equivalence of diagram distances and RKHS metrics.}		
+	
+	%\section{Research Reports}
+
+
+	%\section{Manuscripts}
+
+		
+	\section{Skills}
+		\cventry{Languages}{\normalfont French (native), English (professional TOEFL 627/677), Spanish (B1 level)}{}{}{}{}{}
+		\cventry{Code}{\normalfont C++ (proficient), Python, R, Matlab (prior experience)}{}{}{}{}{}
+
+	\section{Grants}
+		%\cventry{}{\normalfont I received two 1000\euro{} grants, one from the DAAD exchange program, and one from the STIC doctoral school, for a 2-months visit at TU Munich, Germany,
+                %        in the team of Ulrich Bauer}{}{}{}{}
+		%\cventry{-}{\normalfont Funding Support from ATMCS 2016}{}{}{}{}
+		\cventry{-}{\normalfont Mobility Grant (1000 euros) from the DAAD exchange program}{}{}{}{}
+		\cventry{-}{\normalfont Mobility Grant (1000 euros) from the STIC doctoral school}{}{}{}{}
+		\cventry{-}{\normalfont Best Scientific Contribution 2017 (2nd prize -- 600 euros) from the STIC doctoral school}{}{}{}{}
+ 		\cventry{-}{\normalfont Funding Support (1800 dollars) from ICML 2017}{}{}{}{}
+		%\cventry{-}{\normalfont Funding Support from JGA 2017}{}{}{}{}
+
+	\section{Teaching Activities}
+		\cventry{}{\normalfont I was a teaching assistant for the following courses}{}{}{}{}
+		\cventry{2015--2017}{\normalfont{\textit{Topological Data Analysis,}} \normalfont{Ecole Polytechnique, Palaiseau, France}}{}{}{}{}
+		\cventry{2016--2017}{\normalfont{\textit{Basics of Algorithmic and Progamming,}} \normalfont{Ecole Polytechnique, Palaiseau, France}}{}{}{}{}
+
+	\section{Presentations for Workshops and Conferences}
+		\cventry{}{\normalfont I gave presentations at the following international conferences}{}{}{}{}
+		\cventry{Jun. 2015}{\normalfont{\textit{Symposium on Geometry Processing,}} \normalfont{TU Graz, Graz, Austria}}{}{}{}{}
+		\cventry{Nov. 2015}{\normalfont{\textit{Journées de Géométrie Algorithmiques,}} \normalfont{IESC, Cargèse, Corsica}}{Invited}{}{}{}
+		\cventry{Dec. 2015}{\normalfont{\textit{Computational and Methodological Statistics,}} \normalfont{London University, London, UK}}{Invited}{}{}{}
+		\cventry{Apr. 2016}{\normalfont{\textit{Stochastic Geometry and its Applications,}} \normalfont{Université de Nantes, Nantes, France}}{Invited}{}{}{}
+		%\cventry{Jul. 2016}{\normalfont{\textit{Mathematical Methods for High Dimensional Data Analysis,}} \normalfont{TU Munich, Munich, Germany}}{}{}{}{}
+		\cventry{Jun. 2016}{\normalfont{\textit{Symposium on Computational Geometry,}} \normalfont{Tufts University, Boston, USA}}{}{}{}{}
+		\cventry{Jul. 2016}{\normalfont{\textit{Applied Topology: Methods, Computation and Science,}} \normalfont{Politecnica di Torino, Torino, Italy}}{}{}{}{}
+		\cventry{Aug. 2017}{\normalfont{\textit{International Conference on Machine Learning,}} \normalfont{ICC, Sydney, Australia}}{}{}{}{}
+		\cventry{Sep. 2017}{\normalfont{\textit{France Japan Machine Learning Workshop,}} \normalfont{ENS Ulm, Paris, France}}{Invited}{}{}{}
+		\cventry{Oct. 2017}{\normalfont{\textit{Amazon Graduate Research Symposium,}} \normalfont{Amazon Meeting Center, Seattle, USA}}{Invited}{}{}{}
+
+	\section{References}
+
+\cvtriplecolumn{\cvreference{Steve Oudot}
+    {DataShape team}
+    {Inria Saclay}
+    {91120 Palaiseau, France}
+    {}
+    {steve.oudot@inria.fr}
+    {+33 174 854 216}
+}
+{\cvreference{Marco Cuturi}
+    {CREST - ENSAE}
+    {Université Paris-Saclay}
+    {91120 Palaiseau, France}
+    {}
+    {marco.cuturi@ensae.fr}
+    {+33 170 266 857}
+}
+{\cvreference{Bertrand Michel}
+    {Laboratoire Jean Leray}
+    {Université de Nantes}
+    {92101 Nantes, France}
+    {}
+    {bertrand.michel@ec-nantes.fr}
+    {+33 240 372 517}
+}
+    
+\end{document}
+\grid

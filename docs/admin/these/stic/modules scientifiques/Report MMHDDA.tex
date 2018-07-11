@@ -1,0 +1,63 @@
+\documentclass[a4paper, 11pt]{article}
+ 
+\usepackage[utf8]{inputenc}    
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{top=2 cm, bottom=2 cm, left=2.5 cm, right=2.5 cm}
+
+\begin{document}
+ 
+\title{Rapport de l'Ecole Mathematical Methods for High Dimensional Data Analysis}
+\author{Mathieu Carri\`ere}
+\date{}
+
+\maketitle
+
+Cette école d'été a pris place à Munich. Elle était destinée aux étudiants en science 
+des données, avec un focus particulier sur les méthodes pour les données de grande dimension.
+Cette école s'inscrit donc très naturellement dans le cadre de mes recherches, car ma thèse porte
+aussi sur la science des données. L'aspect grande dimension n'est pas tout à fait le centre de 
+mes recherches car je me concentre plutôt sur les données complexes, mais les méthodes présentées
+pendant l'école présentent bien évidemment un grand intérêt pour mes travaux.
+
+\begin{center} \textbf{Cours 1. Streaming and Sketching Algorithm (J. Nelson)} \end{center}
+
+Un sketch de données, étant donnée une famille de queries, est une compression de
+ces données permettant tout de même de donner une réponse définitive à ces queries.
+Ces sketches peuvent être conservés lors de l'ajout (ou suppression) des données initiales :
+c'est le paradigme du streaming. Le cours présentait quelques exemples d'algorithmes de
+sketching et de streaming, avec une point de vue très théorique. L'illustration des avantages
+à utiliser de tels algorithmes (réduction espace et mémoire) a été démontrée formellement
+au tableau mais aussi durant une séance d'exercices à la fin du cours.
+
+\begin{center} \textbf{Cours 2. Topological Time Series Analysis (J. Perea)} \end{center}
+
+Le cours présentait une analyse précise des séries temporelles en transformant la série en un nuage
+de points en grande dimension. Plus spécifiquement, le théorême de plongement de Takens précise
+qu'il est possible de construire une isométrie entre les points d'une variété lisse et des points
+dans un espace euclidien de grande dimension. C'est précisément cette propriété qui est utilisée, 
+et la géométrie du nuage de points obtenus permet d'inférer des propriétés de la série temporelle.
+Par exemple, quand la série est constituée de la somme de deux sinus, le rapport entre les périodes
+influence la topologie du nuage : si ce rapport est rationnel, le nuage a la topologie d'un cercle,
+tandis que si ce rapport est irrationnel, le nuage a celle d'un tore. 
+La topologie d'un nuage de points se calculant aisément via la théorie de l'homologie, 
+de nombreuses applications ont été
+présentées, notamment en analyse de séries d'images (vidéo) et de série musicale.
+
+\begin{center} \textbf{Cours 3. Optimal Stochastic Regularization for Large Scale Machine Learning (L. Rosasco)} \end{center}
+
+Ce cours présentait une approche unifiée et systématique pour l'étude l'apprentissage automatique. Toutes les techniques
+et les algorithmes habituels ont en effet été réintroduits comme des étant des solutions de problèmes de minimisation
+pour différentes fonctionnelles de perte. Les machines à support de vecteurs (SVM) par exemple, peuvent se comprendre
+comme les solutions analytiques qui minimisent la fonctionnelle hinge loss. Plus particulièrement, les régularisations
+des énergies à minimiser peuvent se comprendre comme une minimisation de la complexité du classificateur solution
+permettant d'éviter le surapprentissage sur les données. De nombreuses techniques d'optimisation et d'exemples
+de fonctionnelles ont été présentées et testées sur des jeux de données pour comprendre l'influence des paramètres 
+lorsque les données sont en dimension élevée. 
+
+\end{document}
