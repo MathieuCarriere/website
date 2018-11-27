@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.18)  9 AUG 2018 23:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.10.12)  21 NOV 2018 15:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -943,7 +943,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 191
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 195
 .
 
 (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
@@ -954,27 +954,27 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (13.70229pt too wide) in paragraph at lines 191--191
+Overfull \hbox (13.70229pt too wide) in paragraph at lines 195--195
 \OT1/lmtt/m/n/10.95 bertrand.michel@ec-nantes.fr 
  []
 
 [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 193.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 193.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
  (./CV_research.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 193.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 193.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 197.
 Package rerunfilecheck Info: File `CV_research.out' has not changed.
-(rerunfilecheck)             Checksum: 26BDCBB755CC307E8E41F1C51676AFD7;1312.
+(rerunfilecheck)             Checksum: 954176118F15FC837910C7C8B59C3012;1498.
  ) 
 Here is how much of TeX's memory you used:
- 27950 strings out of 493029
- 515067 string characters out of 6136234
- 577930 words of memory out of 5000000
- 31071 multiletter control sequences out of 15000+600000
- 60957 words of font info for 70 fonts, out of 8000000 for 9000
+ 27958 strings out of 493029
+ 515157 string characters out of 6136233
+ 578930 words of memory out of 5000000
+ 31072 multiletter control sequences out of 15000+600000
+ 61250 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,12n,58p,10363b,334s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,12n,58p,10363b,340s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/share/texmf/fonts/enc/
 dvips/lm/lm-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/sha
 re/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/l
@@ -983,10 +983,10 @@ m/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf
 0.pfb></usr/share/texmf/fonts/type1/public/lm/lmro17.pfb></usr/share/texmf/font
 s/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
 marvosym/marvosym.pfb>
-Output written on CV_research.pdf (2 pages, 228776 bytes).
+Output written on CV_research.pdf (2 pages, 228809 bytes).
 PDF statistics:
- 103 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
- 13 named destinations out of 1000 (max. 500000)
- 18013 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 107 PDF objects out of 1000 (max. 8388607)
+ 93 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
+ 18021 words of extra memory for PDF output out of 20736 (max. 10000000)
 
