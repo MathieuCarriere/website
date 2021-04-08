@@ -19,12 +19,13 @@
 body {
 	color: #333333;
 	background-color:#FFFFFF;
-	font-family:Arial; sans-serif;
+    background-image: url("../bg.png");
+	font-family:Carlito; sans-serif;
 	font-size:100%;
 	margin:20px auto;
-	width:90%;
-        padding-left:10px;
-        padding-right:10px;
+	width:75%;
+    padding-left:10px;
+    padding-right:10px;
 }
 
 h1, h2, h3, h4, h5, h6, p, pre, blockquote, label, ul, ol, dl, 
@@ -44,15 +45,15 @@ li, dd {
 
 a {
         color: #3366CC;
-        background-color: #FFFFFF;
+        /*background-color: #FFFFFF;*/
         font-weight: normal;
         text-decoration: none;
-	outline:none;
+	    outline:none;
 }
 
 a:hover {
         color: #0033CC;
-        background-color: #FFFFFF;
+        /*background-color: #FFFFFF;*/
         font-weight: normal;
         text-decoration: underline;
 }
@@ -87,10 +88,10 @@ a:hover {
 
 #title {
         color:black;
-        background-color:#FFFFFF;
+        /*background-color:#FFFFFF;*/
         font-size:200%;
         font-weight:normal;
-	margin:0px 0px 10px 0px;
+	    margin:0px 0px 10px 0px;
         float:left;
 }
 
@@ -110,7 +111,7 @@ ul#nav {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	width:90%;
+	width:70%;
 }
 
 ul#nav li {
@@ -123,11 +124,11 @@ ul#nav li {
 
 ul#nav li a {
 	display: block;
-	font-size: small;
+	font-size: medium;
 	color: #FFFFFF;
 	font-weight: bold;
 	text-decoration: none;
-	background: #5588CC;
+	background: #9370db; /*#5588CC;*/
 	padding: 2px 0px 2px 0px;
 }
 
